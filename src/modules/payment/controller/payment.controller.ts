@@ -1,7 +1,7 @@
-import { PaymentService } from './payment.service';
+import { PaymentService } from '../service/payment.service';
 import { Controller, Get } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { HandlePaymentResponse } from './format/payment.response';
+import { HandlePaymentResponse } from '../format/payment.response';
 
 @ApiBearerAuth()
 @ApiTags('Payment')
